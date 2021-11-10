@@ -1,3 +1,4 @@
+
 let form = document.getElementById('formulario');
 let pegarCep = document.getElementById('numero');
 let alerta = document.getElementById('alerta').style.display = 'none';
@@ -23,8 +24,8 @@ form.addEventListener('submit', (event) => {
             else if (endereco.erro == true) {
                 alerta = document.getElementById('alerta').style.display = 'block';
             }
-            document.getElementById("numero").value = "";
+
         })
         .catch((error) => console.log(error));
-
+    document.getElementById("numero").value = "";
 });
