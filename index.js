@@ -1,3 +1,5 @@
+const port = Process.env.PORT || 3000;
+
 let form = document.getElementById('formulario');
 let pegarCep = document.getElementById('numero');
 let alerta = document.getElementById('alerta').style.display = 'none';
