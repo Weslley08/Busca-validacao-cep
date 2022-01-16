@@ -22,10 +22,12 @@ form.addEventListener('submit', (event) => {
                 alert(enderecoCompleto)
             }
             else if (endereco.erro == true) {
+                alert("CEP inválido")
                 alerta = document.getElementById('alerta').style.display = 'block';
             }
 
         })
         .catch((error) => console.log(error));
+
     document.getElementById("numero").value = "";
 });
